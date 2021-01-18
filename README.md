@@ -17,6 +17,3 @@ Guangneng Hu, Yu Zhang, and Qiang Yang. Conet: Collaborative cross networks for 
 
 4) Cycle Generation Network (CGN)
 Y Zhang, Y Liu, P Han, C Miao, L Cui, B Li, H Tang: Learning personalized itemset mapping for cross-domain recommendation.In Proceedings of the 29th International Joint Conference on Artificial Intelligence, pages 2561-2567, 2020
-
-
-# Recommender-Systems
