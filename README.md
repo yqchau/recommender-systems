@@ -4,7 +4,7 @@ This repository contains several state-of-the-art models of recommender system c
 The training data used were taken from the public amazon review datasets https://jmcauley.ucsd.edu/data/amazon/.
 
 List of models:
-1) Matrix Factorisation (MF)\n
+1) Matrix Factorisation (MF)
 Y. Koren, R. Bell, and C. Volinsky. 2009. Matrix factorization 
 techniques for recommender systems. Computer (2009).  
 
