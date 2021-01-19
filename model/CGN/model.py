@@ -133,8 +133,8 @@ class CGN(nn.Module):
         print("Recall_d2", recall_d2)
         print()
 
-    def train(self, num_epoch, Lambda):
-        for epoch in range(num_epoch):
+    def train(self):
+        for epoch in range(self.num_epoch):
             print("Epoch {}".format(epoch+1))
             print("----------")
             user, item_d1, item_d2 = self.dataset.create_train_iterable(self.num_items)
@@ -158,7 +158,7 @@ class CGN(nn.Module):
                 loss_fg = self.criterion(actual_d1, pred_fg)
                 loss_gf = self.criterion(actual_d2, pred_gf)
                 #loss = loss_g + loss_f + self.lambda_cyc * (loss_fg + loss_gf)
-                loss = loss_g + loss_f + Lambda * (loss_fg + loss_gf)
+                loss = loss_g + loss_f + self.lambda_cyc * (loss_fg + loss_gf)
                 loss.backward()
                 self.optimizer.step()
             

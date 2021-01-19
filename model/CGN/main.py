@@ -4,8 +4,8 @@ config = {
     "data_dir": "clothing_and_homes",
     "edim": 10,
     "num_items": 5,
-    "lr": 0.00005,
-    "lambda_cyc": 0.01,
+    "lr": 0.0001,
+    "lambda_cyc": 0.5,
     "num_epoch": 100,
     "batch_size": 64,
     "pretrained": True
@@ -13,4 +13,4 @@ config = {
 
 model = CGN(config)
 print()
-model.train(100, 0.5)
+model.train()
